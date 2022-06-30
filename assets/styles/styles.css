@@ -78,7 +78,6 @@ body {
   font-size: var(--normal-font-size);
   background: var(--body-color);
   color: var(--dark-greyish-blue);
-  overflow: hidden;
 }
 
 h1,
@@ -127,7 +126,7 @@ button {
 
 /*=============== LAYOUT ===============*/
 .container {
-  max-width: 1268px;
+  max-width: 1240px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -143,7 +142,7 @@ button {
 
 .bg__top {
   position: absolute;
-  top: -15rem;
+  top: -16rem;
   right: 0;
   z-index: var(--z-negative);
 }
@@ -340,6 +339,54 @@ button {
           order: 1;
 }
 
+/*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 2rem;
+}
+
+.about__intro {
+  position: relative;
+  top: 0;
+}
+
+.about__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-black);
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__description {
+  font-size: var(--h3-font-size);
+}
+
+.about__item {
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--very-light-red);
+  border-radius: 999px;
+  margin-bottom: var(--mb-1);
+}
+
+.about__item-title span {
+  background: var(--bright-red);
+  color: var(--dark-white);
+  padding: 0.4rem 1.3rem;
+  border-radius: 999px;
+  margin-right: 0.99rem;
+}
+
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -351,7 +398,8 @@ button {
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .home__container {
+  .home__container,
+  .about__container {
     -ms-grid-columns: 0.8fr;
         grid-template-columns: 0.8fr;
     -webkit-box-pack: center;
@@ -403,6 +451,19 @@ button {
         -ms-flex-order: 2;
             order: 2;
   }
+  .about__container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .about__title {
+    text-align: start;
+  }
+  .about__item-title {
+    background: none;
+  }
+  .about__item-description {
+    margin-left: 4.7rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -427,6 +488,10 @@ button {
   }
   .home__description {
     padding-right: 2rem;
+  }
+  .about__container {
+    -webkit-column-gap: 7rem;
+            column-gap: 7rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

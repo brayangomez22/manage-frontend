@@ -9,7 +9,8 @@
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
-	.home__container {
+	.home__container,
+	.about__container {
 		grid-template-columns: 0.8fr;
 		justify-content: center;
 	}
@@ -44,8 +45,6 @@
 		}
 	}
 
-
-
 	.home {
 		&__container {
 			grid-template-columns: repeat(2, 1fr);
@@ -60,6 +59,26 @@
 
 		&__img {
 			order: 2;
+		}
+	}
+
+	.about {
+		&__container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+	    &__title {
+			text-align: start;
+		}
+
+		&__item {
+			&-title {
+				background: none;
+			}
+
+			&-description {
+				margin-left: 4.7rem;
+			}
 		}
 	}
 }
@@ -91,6 +110,12 @@
 
 		&__description {
 			padding-right: 2rem;
+		}
+	}
+
+	.about {
+		&__container {
+			column-gap: 7rem;
 		}
 	}
 }

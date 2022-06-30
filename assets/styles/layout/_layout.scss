@@ -11,7 +11,7 @@
 
 /*=============== LAYOUT ===============*/
 .container {
-    max-width: 1268px;
+    max-width: 1240px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -27,7 +27,7 @@
 .bg {
     &__top {
         position: absolute;
-        top: -15rem;
+        top: -16rem;
         right: 0;
         z-index: var(--z-negative);
     }

@@ -1,0 +1,43 @@
+/*=============== ABOUT ===============*/
+.about {
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__intro {
+        position: relative;
+        top: 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-black);
+        margin-bottom: var(--mb-2-5);
+    }
+
+    &__description {
+        font-size: var(--h3-font-size);
+    }
+
+    &__item {
+        margin-bottom: var(--mb-2-5);
+        
+        &-title {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background: var(--very-light-red);
+            border-radius: 999px;
+            margin-bottom: var(--mb-1);
+
+            & span {
+                background: var(--bright-red);
+                color: var(--dark-white);
+                padding: 0.4rem 1.3rem; 
+                border-radius: 999px;
+                margin-right: 0.99rem;
+            }
+        }
+    }
+}
