@@ -1,0 +1,28 @@
+/*=============== HOME ===============*/
+.home {
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__data {
+        text-align: center;
+        order: 2;
+    }
+
+    &__title {
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-black);
+        margin-bottom: var(--mb-2-5);
+    }
+
+    &__description {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-2-5);
+    }
+
+    &__img {
+        width: 100%;
+        justify-self: center;
+        order: 1;
+    }
+}

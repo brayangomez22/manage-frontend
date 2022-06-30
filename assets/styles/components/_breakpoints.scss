@@ -1,0 +1,96 @@
+/*===============  BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+	.home__container {
+		grid-template-columns: 0.8fr;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 767px) {
+    body {
+		margin: 0;
+	}
+
+	.section {
+		padding: 9rem 0 2rem;
+	}
+
+	.nav {
+		height: calc(var(--header-height) + 1.5rem);
+
+		&__img,
+		&__close,
+		&__toggle {
+			display: none;
+		}
+
+		&__list {
+			flex-direction: row;
+			column-gap: 3rem;
+		}
+
+		&__link {
+			text-transform: initial;
+			font-weight: initial;
+		}
+	}
+
+
+
+	.home {
+		&__container {
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+		}
+
+		&__title,
+		&__data {
+			text-align: initial;
+			order: 1;
+		}
+
+		&__img {
+			order: 2;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.bg {
+		&__top {
+			top: -5rem;
+		}
+	}
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: 3rem;
+    }
+
+	.home {
+		&__container {
+			column-gap: 7rem;
+		}
+
+		&__description {
+			padding-right: 2rem;
+		}
+	}
+}
