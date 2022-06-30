@@ -304,8 +304,17 @@ button {
   letter-spacing: 0.08rem;
 }
 
-.button:hover,
-.button:focus {
+.button--white {
+  background: var(--dark-white);
+  color: var(--light-orange);
+}
+
+.button--white:hover, .button--white:focus {
+  -webkit-box-shadow: 0 0.1rem 0.8rem var(--very-dark-bluered);
+          box-shadow: 0 0.1rem 0.8rem var(--very-dark-bluered);
+}
+
+.button:hover, .button:focus {
   -webkit-box-shadow: 0 0.1rem 0.8rem var(--bright-red);
           box-shadow: 0 0.1rem 0.8rem var(--bright-red);
 }
@@ -453,6 +462,36 @@ button {
 
 .swiper-pagination-bullet-active {
   background: linear-gradient(117deg, var(--light-orange), var(--bright-red));
+}
+
+/*=============== BANNER ===============*/
+.banner {
+  position: relative;
+  width: 100%;
+  background: var(--bright-red);
+  padding: 7rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.banner__title {
+  font-size: var(--biggest-font-size);
+  color: var(--dark-white);
+  text-align: center;
+}
+
+.banner__button {
+  margin: auto;
 }
 
 /*=============== SCROLL UP ===============*/
@@ -625,6 +664,16 @@ button {
   }
   #testimonials {
     padding: 6rem 0 2rem;
+  }
+  .banner {
+    padding: 5rem 10rem;
+  }
+  .banner__title {
+    font-size: var(--h1-font-size);
+    text-align: start;
+  }
+  .banner__button {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

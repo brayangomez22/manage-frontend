@@ -1,0 +1,22 @@
+/*=============== BANNER ===============*/
+.banner {
+    position: relative;
+    width: 100%;
+    background: var(--bright-red);
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &__title {
+        font-size: var(--biggest-font-size);
+        color: var(--dark-white);
+        text-align: center;
+    }
+
+    &__button {
+        margin: auto;
+    }
+}

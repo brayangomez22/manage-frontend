@@ -12,9 +12,19 @@
     cursor: pointer;
     transition: box-shadow 0.25s ease 0s;
     letter-spacing: 0.08rem;
-}
 
-.button:hover,
-.button:focus {
-    box-shadow: 0 0.1rem 0.8rem var(--bright-red);
+    &--white {
+        background: var(--dark-white);
+        color: var(--light-orange);
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0.1rem 0.8rem var(--very-dark-bluered);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0.1rem 0.8rem var(--bright-red);
+    }
 }

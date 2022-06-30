@@ -147,4 +147,17 @@
 	#testimonials {
 		padding: 6rem 0 2rem;
 	}
+
+	.banner {
+		padding: 5rem 10rem;
+
+		&__title {
+			font-size: var(--h1-font-size);
+			text-align: start;
+		}
+
+		&__button {
+        	margin: 0;
+    	}
+	}
 }
