@@ -154,6 +154,8 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   z-index: var(--z-fixed);
 }
 
@@ -197,7 +199,7 @@ button {
   .nav__menu {
     position: fixed;
     width: 100%;
-    background: var(--container-color);
+    background: var(--very-light-red);
     top: -150%;
     left: 0;
     padding: 3.5rem 0;
@@ -205,8 +207,6 @@ button {
     transition: 0.4s;
     z-index: var(--z-fixed);
     border-radius: 0 0 1.5rem 1.5rem;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 31px 18px -1px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, -1px 31px 18px -1px rgba(0, 0, 0, 0);
   }
 }
 
@@ -263,7 +263,7 @@ button {
 
 /* Change background header */
 .scroll-header {
-  background: var(--container-color);
+  background: var(--very-light-red);
 }
 
 /* Active link */
@@ -278,7 +278,7 @@ button {
   left: 45%;
   width: 5px;
   height: 5px;
-  background-color: var(--title-color);
+  background-color: var(--dark-blue);
   border-radius: 50%;
 }
 
@@ -385,6 +385,50 @@ button {
   padding: 0.4rem 1.3rem;
   border-radius: 999px;
   margin-right: 0.99rem;
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  background: linear-gradient(117deg, var(--bright-red), var(--bright-red));
+  right: 1rem;
+  bottom: -20%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+  z-index: var(--z-tooltip);
+  opacity: 0.8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  -webkit-box-shadow: 0 0.1rem 0.8rem var(--bright-red);
+          box-shadow: 0 0.1rem 0.8rem var(--bright-red);
+  opacity: 1;
+}
+
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--dark-white);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: var(--dark-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(117deg, var(--bright-red), var(--bright-red));
+  border-radius: 0.5rem;
 }
 
 /*===============  BREAKPOINTS ===============*/
