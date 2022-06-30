@@ -81,12 +81,21 @@
 			}
 		}
 	}
+
+	.swiper-pagination {
+		margin-top: var(--mb-2);
+	}
 }
 
 @media screen and (max-width: 767px) {
 	.bg {
 		&__top {
 			top: -5rem;
+		}
+
+		&__button {
+			top: 40rem;
+			left: 12rem;
 		}
 	}
 }
@@ -117,5 +126,25 @@
 		&__container {
 			column-gap: 7rem;
 		}
+	}
+
+	.testimonials {
+		&__container {
+			margin-left: var(--mb-4);
+			margin-right: var(--mb-4);
+		}
+
+		&__content {
+			width: 600px;
+			border-radius: 1rem;
+		}
+	}
+
+	.swiper {
+		overflow: visible;
+	}
+
+	#testimonials {
+		padding: 6rem 0 2rem;
 	}
 }

@@ -31,4 +31,15 @@
         right: 0;
         z-index: var(--z-negative);
     }
+
+    &__button {
+        position: absolute;
+        bottom: -60rem;
+        left: -32rem;
+        z-index: var(--z-negative);
+    }
+}
+
+.swiper {
+    overflow: hidden;
 }

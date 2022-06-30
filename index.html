@@ -8,6 +8,9 @@
     <!--=============== BOXICONS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/styles/libraries/swiper-bundle.css" />
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
@@ -22,7 +25,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__link active-link">Pricing</a>
+                        <a href="#" class="nav__link">Pricing</a>
                     </li>
 
                     <li class="nav__item">
@@ -62,6 +65,11 @@
             <img src="assets/images/bg-tablet-pattern.svg" alt="bg pattern">
         </div>
 
+        <div class="bg__button">
+            <img src="assets/images/bg-tablet-pattern.svg" alt="bg pattern">
+        </div>
+
+        <!--==================== HOME ====================-->
         <section class="section home" id="home">
             <div class="home__container container grid">
                 <div class="home__data">
@@ -77,6 +85,7 @@
             </div>
         </section>
 
+        <!--==================== ABOUT ====================-->
         <section class="section about" id="about">
             <div class="about__container container grid">
                 <div class="about__intro">
@@ -122,6 +131,51 @@
                 </div>
             </div>
         </section>
+
+        <!--==================== TESTIMONIALS ====================-->
+        <section class="section testimonials" id="testimonials">
+            <h2 class="section__title testimonials__title">What they've said</h2>
+
+            <div class="testimonials__container">
+                <div class="swiper testimonials-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials__content">
+                            <div class="testimonials__img">
+                                <img src="assets/images/avatar-anisha.png" alt="Avatar Anisha">
+                            </div>
+
+                            <div class="testimonials__data">
+                                <h4 class="testimonials__name">Ali Bravo</h4>
+                                <p class="testimonials__description">We have been able to cancel so many other subscriptions since using Manage. There is so more cross-channel confusion and ereyone is much more focused.</p>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide testimonials__content">
+                            <div class="testimonials__img">
+                                <img src="assets/images/avatar-ali.png" alt="Avatar Ali">
+                            </div>
+
+                            <div class="testimonials__data">
+                                <h4 class="testimonials__name">Ali Bravo</h4>
+                                <p class="testimonials__description">We have been able to cancel so many other subscriptions since using Manage. There is so more cross-channel confusion and ereyone is much more focused.</p>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide testimonials__content">
+                            <div class="testimonials__img">
+                                <img src="assets/images/avatar-richard.png" alt="Avatar Richard">
+                            </div>
+
+                            <div class="testimonials__data">
+                                <h4 class="testimonials__name">Ali Bravo</h4>
+                                <p class="testimonials__description">We have been able to cancel so many other subscriptions since using Manage. There is so more cross-channel confusion and ereyone is much more focused.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--=============== SCROLL UP ===============-->
@@ -131,6 +185,9 @@
 
 	<!--=============== SCROLL REVEAL ===============-->
 	<script src="assets/js/scrollreveal.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+	<script src="assets/js/swiper-bundle.js"></script>
 
     <!--=============== MAIN JS ===============-->
 	<script src="assets/js/main.js"></script>

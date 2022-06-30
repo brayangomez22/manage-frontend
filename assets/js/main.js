@@ -42,6 +42,18 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 
+/*=============== TESTIMONIALS SWIPER ===============*/
+let testimonialsSwiper = new Swiper('.testimonials-swiper', {
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	loop: 'true',
+	spaceBetween: 16,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
 	origin: 'top',
@@ -51,7 +63,7 @@ const sr = ScrollReveal({
 	// reset: true
 });
 
-sr.reveal(`.home__container`);
+sr.reveal(`.home__container, .testimonials-swiper`);
 sr.reveal(`.footer__content`, { interval: 100 });
 sr.reveal(`.about__intro`, { origin: 'left' });
 sr.reveal(`.about__content`, { origin: 'right' });

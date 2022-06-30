@@ -99,19 +99,3 @@
 .scroll-header {
     background: var(--very-light-red);
 }
-
-/* Active link */
-.active-link {
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: -0.75rem;
-        left: 45%;
-        width: 5px;
-        height: 5px;
-        background-color: var(--dark-blue);
-        border-radius: 50%;
-    }
-}
