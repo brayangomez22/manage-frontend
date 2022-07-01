@@ -38,6 +38,11 @@
     &__name {
         margin-bottom: var(--mb-1);
     }
+
+    &__button {
+        display: flex;  
+        margin: auto;
+    }
 }
 
 #testimonials {
@@ -48,6 +53,7 @@
 .swiper-pagination {
     position: initial;
     margin-top: 1rem;
+    margin-bottom: var(--mb-1);
 }
 
 .swiper-pagination-bullet {

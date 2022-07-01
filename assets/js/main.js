@@ -63,7 +63,7 @@ const sr = ScrollReveal({
 	// reset: true
 });
 
-sr.reveal(`.home__container, .testimonials-swiper`);
+sr.reveal(`.home__container, .testimonials-swiper, .banner`);
 sr.reveal(`.footer__content`, { interval: 100 });
 sr.reveal(`.about__intro`, { origin: 'left' });
 sr.reveal(`.about__content`, { origin: 'right' });

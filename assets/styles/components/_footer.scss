@@ -1,0 +1,87 @@
+/*=============== FOOTER ===============*/
+.footer {
+    position: relative;
+    background: var(--very-dark-blue);
+
+    &__container {
+        row-gap: 2rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__social {
+        display: flex;
+        column-gap: 0.75rem;
+        margin-top: var(--mb-3);
+
+        &-link {
+            display: inline-flex;
+            font-size: 1rem;
+
+            &:hover svg{
+                background: var(--bright-red);
+            }
+        }
+    }
+
+    &__links {
+        display: grid;
+        row-gap: 1.3rem;
+    }
+
+    &__link {
+        font-size: var(--small-font-size);
+        color: var(--body-color);
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--light-orange);
+        }
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__field input {
+        border-radius: 999px;
+        padding: 0.8em 1.7em;
+        background: var(--dark-white);
+        border: none;
+        color: var(--dark-blue);
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: var(--font-semi-bold);
+        cursor: pointer;
+        letter-spacing: 0.08rem;
+        margin-right: 0.4rem;
+    }
+
+    &__button {
+        position: absolute;
+        right: 0;
+        padding: 0.8em 1.7em;
+    }
+
+    &__copy {
+        text-align: right;
+        font-size: var(--smaller-font-size);
+        margin-top: var(--mb-1);
+    }
+}
+
+#footer {
+    padding: 4rem 1rem;
+}
